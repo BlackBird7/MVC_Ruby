@@ -1,0 +1,2 @@
+class DetalleOrden < ApplicationRecord
+end
