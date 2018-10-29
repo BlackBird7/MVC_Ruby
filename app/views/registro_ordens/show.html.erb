@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero orden:</strong>
+  <%= @registro_orden.numero_orden %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @registro_orden.fecha %>
+</p>
+
+<%= link_to 'Edit', edit_registro_orden_path(@registro_orden) %> |
+<%= link_to 'Back', registro_ordens_path %>

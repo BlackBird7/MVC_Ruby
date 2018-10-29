@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class OrdenTest < ActiveSupport::TestCase
+class RegistroOrdenTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

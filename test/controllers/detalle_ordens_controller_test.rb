@@ -17,7 +17,7 @@ class DetalleOrdensControllerTest < ActionDispatch::IntegrationTest
 
   test "should create detalle_orden" do
     assert_difference('DetalleOrden.count') do
-      post detalle_ordens_url, params: { detalle_orden: { cantidad: @detalle_orden.cantidad, precio_venta: @detalle_orden.precio_venta } }
+      post detalle_ordens_url, params: { detalle_orden: { canditdad: @detalle_orden.canditdad, precio_venta: @detalle_orden.precio_venta } }
     end
 
     assert_redirected_to detalle_orden_url(DetalleOrden.last)
@@ -34,7 +34,7 @@ class DetalleOrdensControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update detalle_orden" do
-    patch detalle_orden_url(@detalle_orden), params: { detalle_orden: { cantidad: @detalle_orden.cantidad, precio_venta: @detalle_orden.precio_venta } }
+    patch detalle_orden_url(@detalle_orden), params: { detalle_orden: { canditdad: @detalle_orden.canditdad, precio_venta: @detalle_orden.precio_venta } }
     assert_redirected_to detalle_orden_url(@detalle_orden)
   end
 

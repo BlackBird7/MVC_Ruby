@@ -69,6 +69,6 @@ class DetalleOrdensController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def detalle_orden_params
-      params.require(:detalle_orden).permit(:cantidad, :precio_venta)
+      params.require(:detalle_orden).permit(:canditdad, :precio_venta)
     end
 end

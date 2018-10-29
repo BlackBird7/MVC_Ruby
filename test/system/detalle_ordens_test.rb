@@ -14,7 +14,7 @@ class DetalleOrdensTest < ApplicationSystemTestCase
     visit detalle_ordens_url
     click_on "New Detalle Orden"
 
-    fill_in "Cantidad", with: @detalle_orden.cantidad
+    fill_in "Canditdad", with: @detalle_orden.canditdad
     fill_in "Precio Venta", with: @detalle_orden.precio_venta
     click_on "Create Detalle orden"
 
@@ -26,7 +26,7 @@ class DetalleOrdensTest < ApplicationSystemTestCase
     visit detalle_ordens_url
     click_on "Edit", match: :first
 
-    fill_in "Cantidad", with: @detalle_orden.cantidad
+    fill_in "Canditdad", with: @detalle_orden.canditdad
     fill_in "Precio Venta", with: @detalle_orden.precio_venta
     click_on "Update Detalle orden"
 

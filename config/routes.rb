@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :detalle_ordens
-  resources :ordens
+  resources :registro_ordens
   resources :productos
   resources :clientes
   #get 'hello/index'
