@@ -1,3 +1,3 @@
 class RegistroOrden < ApplicationRecord
-    belong_to :cliente
+    belongs_to :cliente
 end
