@@ -21,6 +21,10 @@
     <%= form.text_field :precio_venta %>
   </div>
 
+  <div class="field">
+    <%=form.select :producto_id, Producto.all.collect {|x| [x.nombre_producto, x.id]},{:include_blank => "Selecciona un producto"}%>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

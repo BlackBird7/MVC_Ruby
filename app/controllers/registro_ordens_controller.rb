@@ -24,7 +24,8 @@ class RegistroOrdensController < ApplicationController
   # POST /registro_ordens
   # POST /registro_ordens.json
   def create
-    @registro_orden = RegistroOrden.new(registro_orden_params)
+    params[:registro_orden].permit! #para permitir el acceso de las peticiones de ordenes
+    @registro_orden = RegistroOrden.new(params[:registro_orden])
 
     respond_to do |format|
       if @registro_orden.save

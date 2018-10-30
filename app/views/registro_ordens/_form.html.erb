@@ -12,13 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :numero_orden %>
+    <%= form.label :numero_orden , :class=>"numero" %>
     <%= form.number_field :numero_orden %>
   </div>
 
   <div class="field">
-    <%= form.label :fecha %>
+    <%= form.label :fecha ,:class=>"fechanombre"%>
     <%= form.date_select :fecha %>
+  </div>
+
+   <div class="field">
+    <%=form.select :cliente_id, Cliente.all.collect {|x| [x.nombre_cliente, x.id]},{:include_blank => "Selecciona un cliente"}%>
   </div>
 
   <div class="actions">
